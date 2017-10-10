@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './CreditCard.css';
+import '../styles/CreditCard.css';
 
 class CreditCard extends Component {
     constructor(props) {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import CreditCard from './CreditCard';
-import './CreditCardPage.css';
+import CreditCard from '../components/CreditCard';
+import '../styles/CreditCardPage.css';
 
 class CreditCardPage extends Component {
     constructor(props) {
