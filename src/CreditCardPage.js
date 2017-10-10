@@ -31,10 +31,18 @@ class CreditCardPage extends Component {
     }
     
     loadAdditionalCards() {
-        let newArray = [...this.state.data]
-        newArray.push(<CreditCard name={"test name"} />)
-        // alert(newArray[3]);
-        this.setState({ data: newArray });
+        const newCard = <CreditCard 
+            name={"Super Basic credit card"}
+            rewards={"There are absolutely no rewards for this card"}
+            apr={"0%"}
+            fee={"0%"} />
+
+        let updatedCardArray = [...this.state.data];
+        updatedCardArray.push(newCard);
+        this.setState({ data: updatedCardArray });
+
+        const targetElem = document.getElementById('additional-cards-button');
+        targetElem.style.display = 'none';
     }
 
     render() {
@@ -46,7 +54,7 @@ class CreditCardPage extends Component {
                     <br /><br />
                 </div>
                 <div className="row additional-cards-div">
-                    <button type="button" className="btn btn-primary additional-cards-button" onClick={this.loadAdditionalCards.bind(this)}>ADDITIONAL CARDS</button><br />
+                    <button type="button" id="additional-cards-button" className="btn btn-primary" onClick={this.loadAdditionalCards.bind(this)}>ADDITIONAL CARDS</button><br />
                 </div>
             </div>
         );
