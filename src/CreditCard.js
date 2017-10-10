@@ -15,7 +15,7 @@ class CreditCard extends Component {
                 </div>
                 <div className="row">
                     <div className="col-md-4">
-                        <p>This is where the picture will go</p>
+                        <img src="http://www.psdgraphics.com/file/credit-card.jpg" height="175px" width="250px"></img>
                     </div>
                     <div className="col-md-2">
                         <h4>Rewards</h4>
