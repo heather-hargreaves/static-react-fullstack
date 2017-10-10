@@ -19,7 +19,7 @@ class CreditCard extends Component {
                     </div>
                     <div className="col-md-2">
                         <h4>Rewards</h4>
-                        <p>This is where the rewards description will go</p>
+                        <p>{this.props.rewards}</p>
                     </div>
                     <div className="col-md-2">
                         <h4>APR</h4>
@@ -27,7 +27,7 @@ class CreditCard extends Component {
                     </div>
                     <div className="col-md-2">
                         <h4>Annual Fee</h4>
-                        <p>Annual%</p>
+                        <p>{this.props.fee}</p>
                     </div>
                     <div className="col-md-2">
                         <button type="button submit" class="btn btn-primary">LEARN MORE</button><br />
