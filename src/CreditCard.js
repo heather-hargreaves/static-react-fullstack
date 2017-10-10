@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const CreditCard = () => {
-    return(
-        <div>
-            <h3>Credit Card Title</h3>
-            <p>Credit Card description</p>
-        </div>
-    );
+class CreditCard extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return(
+            <div>
+                <h3>{this.props.name}</h3>
+                <p>Credit Card description</p>
+            </div>
+        );
+    }
 };
 
 export default CreditCard;
