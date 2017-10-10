@@ -3,7 +3,7 @@ import CreditCard from './CreditCard';
 
 const CreditCardPage = () => {
     return(
-        <div>
+        <div className="container">
             <h1>Credit Cards</h1>
             <CreditCard name={"Credit Card 1"}/>
             <CreditCard name={"Credit Card 2"}/>
