@@ -1,7 +1,13 @@
 import React from 'react';
 import CreditCard from './CreditCard';
+import './CreditCardPage.css';
 
 const CreditCardPage = () => {
+    
+    const handleAdditionalCardsClick = () => {
+        alert('clicked!');
+    }
+
     return(
         <div className="container">
             <h1>Credit Cards</h1>
@@ -23,6 +29,10 @@ const CreditCardPage = () => {
                 img={"https://photos-1.dropbox.com/t/2/AAC1JMSj0wjDoP2iwajLQIEDFlac31UshK7lWB7CAdkKAg/12/281164706/png/32x32/3/1507683600/0/2/BlackCardImage%402x.png/EP-qoMoEGPZaIAIoAg/srdRHhboh8vqvz69kuPO5DsWx2ECMFQ_ICwK_zakp1U?dl=0&size=1280x960&size_mode=3"} 
                 apr={"16.99-23.99%"} 
                 fee={"0% intro annual fee for the first year, after that $95"} />
+            <br /><br />
+            <div className="row additional-cards-div">
+                <button type="button" className="btn btn-primary additional-cards-button" onClick={handleAdditionalCardsClick}>ADDITIONAL CARDS</button><br />
+            </div>
         </div>
     );
 };
