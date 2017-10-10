@@ -31,20 +31,22 @@ class CreditCardPage extends Component {
     }
     
     loadAdditionalCards() {
-        const targetElem = document.getElementById('initial-card-options');
-        targetElem.insertAdjacentHTML('afterend', 'Hi There!');
+        let newArray = [...this.state.data]
+        newArray.push(<CreditCard name={"test name"} />)
+        // alert(newArray[3]);
+        this.setState({ data: newArray });
     }
 
     render() {
         return(
             <div className="container">
-                <div id="initial-card-options">
+                <div id="card-options">
                     <h1>Credit Cards</h1>
                     {this.state.data}
                     <br /><br />
                 </div>
                 <div className="row additional-cards-div">
-                    <button type="button" className="btn btn-primary additional-cards-button" onClick={this.loadAdditionalCards}>ADDITIONAL CARDS</button><br />
+                    <button type="button" className="btn btn-primary additional-cards-button" onClick={this.loadAdditionalCards.bind(this)}>ADDITIONAL CARDS</button><br />
                 </div>
             </div>
         );
