@@ -8,7 +8,7 @@ const CreditCardPage = () => {
             <CreditCard 
                 name={"Platinum credit card"} 
                 img={"https://photos-6.dropbox.com/t/2/AACwPsJ_0-_HlwFpDoa04J_m4ftuq9nv-BPz94QfymLgmA/12/281164706/png/32x32/3/1507683600/0/2/SilverCardImage%402x.png/EP-qoMoEGPZaIAIoAg/2298qmiK7g-JFaWZpySkA8aGmaIhFOO0aSyQAULN2nM?dl=0&size=1280x960&size_mode=3"} 
-                apr={"0"} />
+                apr={"0% intro APR for 15 months from account opening on purchases and balance transfers. After that, 15.99-24.74% variable APR"} />
             <CreditCard 
                 name={"Gold credit card"} 
                 img={"https://photos-2.dropbox.com/t/2/AABJo2tU3pccsbdI8WQJurifnPeipOgahV7afWpQiOV66A/12/281164706/png/32x32/3/1507683600/0/2/GoldCardImage%402x.png/EP-qoMoEGPZaIAIoAg/5kzMFF0AdzJXl_YtpP1fhLRX8iQ4YQj_-LS4s3y7Cc8?dl=0&size=1280x960&size_mode=3"} 

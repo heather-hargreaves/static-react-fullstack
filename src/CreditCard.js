@@ -8,7 +8,7 @@ class CreditCard extends Component {
 
     render() {
         return(
-            <div>
+            <div class="credit-card">
                 <hr />
                 <div className="row">
                     <h3>Community Bank {this.props.name}</h3>
@@ -23,14 +23,15 @@ class CreditCard extends Component {
                     </div>
                     <div className="col-md-2">
                         <h4>APR</h4>
-                        <p>{this.props.apr}%</p>
+                        <p>{this.props.apr}</p>
                     </div>
                     <div className="col-md-2">
                         <h4>Annual Fee</h4>
                         <p>Annual%</p>
                     </div>
                     <div className="col-md-2">
-                        <button type="button" class="btn btn-primary">LEARN MORE</button>
+                        <button type="button submit" class="btn btn-primary">LEARN MORE</button><br />
+                        <a href="#">Pricing & Terms</a>
                     </div>
                 </div>
             </div>
