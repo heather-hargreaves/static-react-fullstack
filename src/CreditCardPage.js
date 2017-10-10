@@ -5,9 +5,9 @@ const CreditCardPage = () => {
     return(
         <div className="container">
             <h1>Credit Cards</h1>
-            <CreditCard name={"Credit Card 1"}/>
-            <CreditCard name={"Credit Card 2"}/>
-            <CreditCard name={"Credit Card 3"}/>
+            <CreditCard name={"Platinum credit card"}/>
+            <CreditCard name={"Gold credit card"}/>
+            <CreditCard name={"Black credit card"}/>
         </div>
     );
 };
