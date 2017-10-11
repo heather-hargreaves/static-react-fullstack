@@ -56,7 +56,7 @@ class CreditCardPage extends Component {
             <div className="container">
                 <div id="card-options">
                     <h1>Credit Cards</h1>
-                    {this.state.data}
+                    { this.state.data }
                     <br /><br />
                 </div>
                 <div className="row additional-cards-div">

@@ -6,13 +6,13 @@ import './styles/index.css';
 import App from './components/App';
 import CreditCard from './components/CreditCard';
 import CreditCardPage from './containers/CreditCardPage';
-import CreditCardShow from './containers/CreditCardShow';
+import CardApplication from './components/CardApplication';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render((
     <BrowserRouter>
         <Switch>
-            <Route path="/details" component={ CreditCardShow } />
+            <Route path="/details" component={ CardApplication } />
             <Route path="/" component={ CreditCardPage }/>
         </Switch>
     </BrowserRouter>    

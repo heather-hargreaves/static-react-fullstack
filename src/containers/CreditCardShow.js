@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class CreditCardShow extends Component {
     render() {
         return(
-            <h1>Hello!</h1>
+            <h1>{this.props.params}!</h1>
         );
     }
 };
