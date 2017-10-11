@@ -31,14 +31,20 @@ class CreditCardPage extends Component {
     }
     
     loadAdditionalCards() {
-        const newCard = <CreditCard 
-            name={"Super Basic credit card"}
-            rewards={"There are absolutely no rewards for this card"}
-            apr={"0%"}
-            fee={"0%"} />
 
-        let updatedCardArray = [...this.state.data];
-        updatedCardArray.push(newCard);
+        const additionalCards = [ <CreditCard 
+                name={"Super Basic credit card"}
+                rewards={"There are absolutely no rewards for this card"}
+                apr={"0%"}
+                fee={"0%"} />,
+            <CreditCard 
+                name={"Secure credit card"}
+                rewards={"No rewards"}
+                apr={"0%"}
+                fee={"0%"} />
+        ]
+
+        let updatedCardArray = [...this.state.data, ...additionalCards];
         this.setState({ data: updatedCardArray });
 
         const targetElem = document.getElementById('additional-cards-button');
