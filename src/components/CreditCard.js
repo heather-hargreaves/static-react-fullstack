@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/CreditCard.css';
 
 class CreditCard extends Component {
@@ -31,7 +32,7 @@ class CreditCard extends Component {
                     </div>
                     <div className="col-md-2">
                         <button type="button submit" class="btn btn-primary">LEARN MORE</button><br />
-                        <a href="#">Pricing & Terms</a>
+                        <Link to="/details">Pricing & Terms</Link>
                     </div>
                 </div>
             </div>
