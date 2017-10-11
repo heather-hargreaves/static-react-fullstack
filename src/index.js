@@ -12,7 +12,7 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render((
     <BrowserRouter>
         <Switch>
-            <Route path="/details" component={ CardApplication } />
+            <Route path="/apply" component={ CardApplication } />
             <Route path="/" component={ CreditCardPage }/>
         </Switch>
     </BrowserRouter>    
