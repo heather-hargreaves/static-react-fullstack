@@ -32,7 +32,7 @@ class CreditCard extends Component {
                         <p>{ this.props.fee }</p>
                     </div>
                     <div className="col-md-2">
-                        <Link to="/apply">
+                        <Link to={`/apply?card=${ this.props.name }`}>
                             <button type="button submit" class="btn btn-primary">APPLY NOW</button><br />
                         </Link>
                     </div>

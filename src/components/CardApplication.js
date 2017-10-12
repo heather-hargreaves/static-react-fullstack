@@ -2,11 +2,29 @@ import React, { Component } from 'react';
 import '../styles/CardApplication.css';
 
 class CardApplication extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            cardType: null
+        };
+    }
+
+    componentWillMount() {
+        const param = window.location.search.substring(window.location.search.indexOf('?') + 6);
+        const cardNameArray = param.split("%20");
+        const cardNameString = cardNameArray.join(" ");
+
+        this.setState({
+            cardType: cardNameString
+        });
+    }
+    
     render() {
         return(
             <div className="container">
                 <div className="row title">
-                    <h1>Apply For a Credit Card</h1>
+                    <h1>Apply For the { this.state.cardType }</h1>
                 </div><hr />
                 <form>
                     <div className="form-group">
