@@ -6,7 +6,7 @@ import './styles/index.css';
 import App from './components/App';
 import CreditCard from './components/CreditCard';
 import CreditCardPage from './containers/CreditCardPage';
-import CardApplication from './components/CardApplication';
+import CardApplication from './containers/CardApplication';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render((

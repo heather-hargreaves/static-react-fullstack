@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/CreditCard.css';
-import CardApplication from './CardApplication';
+import CardApplication from '../containers/CardApplication';
 
 class CreditCard extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <div class="credit-card">

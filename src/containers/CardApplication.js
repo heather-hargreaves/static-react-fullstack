@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/CardApplication.css';
-import CardApplicationForm from './CardApplicationForm';
+import CardApplicationForm from '../components/CardApplicationForm';
 
 class CardApplication extends Component {
     constructor(props) {

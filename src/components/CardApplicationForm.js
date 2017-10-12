@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class CardApplicationForm extends Component {
     render() {
@@ -45,7 +46,9 @@ class CardApplicationForm extends Component {
                         </div>
                     </div>
                     <div className="form-group submit-div">
-                        <button type="submit" id="submit" className="btn btn-primary">SUBMIT</button><br />
+                        <Link to="/">
+                            <button type="submit" id="submit" className="btn btn-primary">SUBMIT</button><br />
+                        </Link>
                     </div>
                 </form>
             </div>
